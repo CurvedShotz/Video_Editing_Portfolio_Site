@@ -237,3 +237,14 @@ button:hover {
     width: 95%;
   }
 }
+
+.talking-head-section {
+  position: relative;
+  z-index: 5; /* ✅ Ensures it's above background */
+}
+
+.talking-head-section iframe {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto; /* ✅ Makes sure it's clickable */
+}
